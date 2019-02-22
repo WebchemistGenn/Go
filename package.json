@@ -1,0 +1,20 @@
+{
+  "name": "golang",
+  "version": "1.0.0",
+  "description": "Golang의 언어를 배워보자!!",
+  "main": "index.js",
+  "scripts": {
+    "basic": "go run basic/basic.go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebchemistGenn/Golang.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebchemistGenn/Golang/issues"
+  },
+  "homepage": "https://github.com/WebchemistGenn/Golang#readme"
+}

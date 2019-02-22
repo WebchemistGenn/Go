@@ -1,27 +1,28 @@
 package main
 
 // 필요한 패키지 불러오기
-import(
+import (
 	"encoding/json"
 	"log"
-	"net/http"
 	"math/rand"
+	"net/http"
 	"strconv"
+
 	"github.com/gorilla/mux"
 )
 
 // Book Struct (Model)
 type Book struct {
-	ID			string	`json:"id"`
-	Isbn		string	`json:"isbn"`
-	Title		string	`json:"title"`
-	Author	*Author	`json:"author"`
+	ID     string  `json:"id"`
+	Isbn   string  `json:"isbn"`
+	Title  string  `json:"title"`
+	Author *Author `json:"author"`
 }
 
 // Author Struct
 type Author struct {
-	Firstname		string	`json:"firstname"`
-	Lastname		string 	`json:"lastname"`
+	Firstname string `json:"firstname"`
+	Lastname  string `json:"lastname"`
 }
 
 // Init Books var as a slice Book struct
@@ -93,8 +94,8 @@ func main() {
 	r := mux.NewRouter()
 
 	// Mock Data - @todo - implement DB
-	books = append(books, Book { ID: "1", Isbn: "44876", Title: "Book 1", Author: &Author { Firstname: "Yoon", Lastname: "WonYoul" }})
-	books = append(books, Book { ID: "2", Isbn: "43245", Title: "Book 2", Author: &Author { Firstname: "Lee", Lastname: "Huck" }})
+	books = append(books, Book{ID: "1", Isbn: "44876", Title: "Book 1", Author: &Author{Firstname: "Yoon", Lastname: "WonYoul"}})
+	books = append(books, Book{ID: "2", Isbn: "43245", Title: "Book 2", Author: &Author{Firstname: "Lee", Lastname: "Huck"}})
 
 	// Route Handlers / Endpoints
 	r.HandleFunc("/api/books", getBooks).Methods("GET")
