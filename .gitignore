@@ -1,1 +1,5 @@
-Golang_REST_API
+# node_modules
+node_modules/
+
+# docs
+docs/_book/
