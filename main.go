@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	const message = "Hello"
+	const message string = "Hello"
 	fmt.Println("test")
 	something.Say(message)
 }
