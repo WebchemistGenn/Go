@@ -1,4 +1,4 @@
-package main
+package basic
 
 import (
 	"errors"
@@ -6,7 +6,7 @@ import (
 	"math"
 )
 
-func main() {
+func basic() {
 	// 메세지 출력
 	fmt.Println("Hello Webchemist")
 
