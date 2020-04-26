@@ -2,7 +2,7 @@ package something
 
 import "fmt"
 
-// SayHello is an example function
-func SayHello() {
-	fmt.Println("Hello World")
+// Say is an example function
+func Say(message) {
+	fmt.Println(message)
 }

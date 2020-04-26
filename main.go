@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	const message = "Hello"
 	fmt.Println("test")
-	something.SayHello()
+	something.Say(message)
 }
