@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/WebchemistGenn/go/something"
 )
 
 func main() {
