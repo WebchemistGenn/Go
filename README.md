@@ -1,4 +1,14 @@
-# Golang을 사용해보자!!
+# Golang
+
+> Golang 사이트 [링크](https://golang.org)
+
+### Download
+Golang의 사이트로 이동하여 `Download Go`를 눌러 본인의 맞는 운영체제의 파일을 다운받습니다.
+
+### Installation
+
+### VSCode Setting
+VSCode를 실행하고 Extensions → Go를 검색해서 설치합니다.
 
 ### Basic
 1. Value 선언
@@ -11,15 +21,9 @@
 
 
 ### REST API
-1. 내부 Fake Data로 REST 구성해보기
-2. 파일 분리관리
+1. net/http를 이용하여 백엔드 구성하기
+2. CRUD 구현하기
+3. Database 연동하기
 
 ### GraphQL API
 
-### MySQL
-
-### MongoDB
-
-### Redis
-
-### RabbitMQ
